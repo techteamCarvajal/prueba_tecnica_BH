@@ -1,0 +1,58 @@
+<section class="sec1">
+  <div class="container">
+    <div class="section-title">
+        <h2>Formulario de contacto</h2>
+        <div class="section-subtitle">Eulearn</div>
+        <span class="section-separator"></span>
+        <p>Puedes contactarnos llenando el siguiente formulario  de Eulearn</p><br>
+          <%= link_to "https://api.whatsapp.com/send?phone=573228646154&text=Hola, te escribo desde la plataforma de Eulearn, y tengo una consulta que hacerte para que me la puedas solucionar.", target: "_blank", rel: "noreferrer", class: "btn big-btn color-bg flat-btn" do %>
+            Mensaje por WhatsApp <span><i class="fa fa-whatsapp"></i></span>
+          <% end %>
+    </div>
+  </div>
+
+  <div class="container sign-in-container">
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form" style="text-align: center;">
+            <%= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <%= f.label :name, "Nombre" %>
+                  <%= f.text_field :name, autofocus: true, placeholder: "Nombre de usuario", 
+                  title: 'Pon el nombre de tu usuario', 'data-toggle' => 'tooltip',class: "form-control", required: true, value: "#{(user_signed_in?) ? current_user.first_name + ' ' + current_user.last_name : '' }" %>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <%= f.label :email, "Correo" %>    
+                  <%= f.email_field :email, placeholder: "Email", title: 'Pon tu email', 'data-toggle' => 'tooltip',class: "form-control", required: true, value: "#{(user_signed_in?) ? current_user.email : '' }" %>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <%= f.label :message, "Mensaje" %>
+                  <%= f.text_area :message, placeholder: "Describe en detalle la razón de tu mensaje", title: 'Mensaje', 'data-toggle' => 'tooltip',class: "form-control", required: true %>
+                </div>
+              </div>
+
+              
+
+              <div class="col-md-6 col-md-offset-3">
+                <button class="btn  big-btn  color-bg flat-btn" type="submit" style="width: 100%">
+                  Enviar pregunta
+                  <i class="fa fa-angle-right"></i>
+                </button>
+              </div>
+
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

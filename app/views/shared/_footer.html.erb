@@ -1,0 +1,72 @@
+<footer class="main-footer dark-footer  ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Acerca de nosotros</h3>
+                                <div class="footer-contacts-widget fl-wrap">
+                                    <p>-Preparación para exámenes de Ingreso en instituciones educativas de alto nivel </p>
+                                    <ul  class="footer-contacts fl-wrap">
+                                        <li><span><i class="fa fa-envelope-o"></i> Correo electrónico :</span><p>eulearncol@gmail.com </p></li>
+                                        <li> <span><i class="fa fa-map-marker"></i> Dirección de oficinas :</span> <p>Calle 146 CBIS No 91-21 </p></li>
+                                        <li><span><i class="fa fa-phone"></i> Número de Celular :</span> <p>+57 322 8646154 </p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Nuestro contenido</h3>
+                                <div class="footer-menu fl-wrap">
+                                   <ul>
+
+                                    <li><%= link_to "- Inicio", root_path  %></li> <br>
+                                    <li><%= link_to "- Método Eulearn", "/metodo" %></li> <br>
+                                    <li> <%= link_to "- Programa intensivo", "/programa_intensivo" %>  </li>
+                                    <li><%= link_to "- Programa multidisciplinar", "/programa_multidisciplinar" %></li>
+                                     <li><%= link_to "- Programa fast class", "/programa_fastclass" %></li> <br>
+                                    <li><%= link_to "- Acerca Eulearn", "/acerca" %></li>
+                                    <li><%= link_to "- Preguntas frecuentes", "/faq" %></li> 
+
+                                    <li> <%= link_to "- Contacto" , new_contact_path %></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap">
+                                <h3>Subscribete</h3>
+                                <div class="subscribe-widget fl-wrap">
+                                    <p>SUSCRÍBETE A NUESTRA NEWSLETTER Y RECIBE NUESTROS CONTENIDOS EXCLUSIVOS.</p>
+                                    <div class="subcribe-form">
+                                        <form id="subscribe">
+                                            <input class="enteremail" name="email" id="subscribe-email" placeholder="Email" spellcheck="false" type="text">
+                                            <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-rss"></i> Subscribete</button>
+                                            <label for="subscribe-email" class="subscribe-message"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-footer fl-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright"> &#169; <%=Time.now.year%>. Eulearn Todos los derechos reservados</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="https://api.whatsapp.com/send?phone=573228646154&text=Hola, te escribo desde la plataforma de Eulearn, y tengo una consulta que hacerte para que me la puedas solucionar." target="_blank" ><i class="fa fa-facebook-official"></i></a></li>
+                                        <li><a href="https://api.whatsapp.com/send?phone=573228646154&text=Hola, te escribo desde la plataforma de Eulearn, y tengo una consulta que hacerte para que me la puedas solucionar." target="_blank" ><i class="fa fa-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
