@@ -2,6 +2,11 @@
     <div class="container">
         <div class="list-single-main-item fl-wrap">
             <div class="list-single-main-item-title fl-wrap">
+                 <% if @goods.size == 0 %>
+                    <p>No existen actualmente bienes, por favor crea uno</p>
+                     <a> <%= link_to "Crear bien", new_good_path , class: 'btn transparent-btn float-btn'%>
+                        </a>
+                        <% end %>
                 <% @goods.each do |good| %>
                  <h3>Nombre Bien: <%= good.name %>  </h3>
                     <p> Descripción: <%= good.description %> </p>
