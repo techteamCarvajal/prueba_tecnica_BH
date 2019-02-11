@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190203180245) do
+ActiveRecord::Schema.define(version: 2019_02_11_154041) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -29,19 +29,18 @@ ActiveRecord::Schema.define(version: 20190203180245) do
     t.index ["reset_password_token"], name: "index_administrators_on_reset_password_token", unique: true
   end
 
-  create_table "blogs", force: :cascade do |t|
-    t.string "title"
-    t.string "image"
-    t.text "content"
-    t.string "tags"
+  create_table "goods", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.float "initial_value"
+    t.float "current_value"
+    t.date "purchase_date"
+    t.date "last_modification_date"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "hits"
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "type_good"
+    t.index ["user_id"], name: "index_goods_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -56,9 +55,6 @@ ActiveRecord::Schema.define(version: 20190203180245) do
     t.string "celular"
     t.string "nombres"
     t.string "apellidos"
-    t.string "situacion_sentimental"
-    t.string "tipo_documento"
-    t.string "ciudad"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

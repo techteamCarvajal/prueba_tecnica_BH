@@ -1,0 +1,28 @@
+<div class="col-md-12">
+    <div class="container">
+        <div class="list-single-main-item fl-wrap">
+            <div class="list-single-main-item-title fl-wrap">
+                 <h3>Nombre Bien: <%= @good.name %>  </h3>
+                    <p> Descripción: <%= @good.description %> </p>
+                            <div class="list-single-main-item-title fl-wrap">
+                                 <h3>Caracteristicas</h3>        
+                <div class="listing-features fl-wrap">
+                    <ul>
+                    <li> Tipo de bien: <%= @good.type_good%> </li>
+                    <li> Precio inicial: <%= @good.initial_value%> </li>
+                    <li> Precio Actual: <%= @good.current_value  %></li>
+                    <li> fecha de compra del bien: <%= @good.purchase_date %></li>
+                    <li> última modificación del bien: <%= @good.last_modification_date%></li>
+                    </ul>  
+                   <div class="col-md-12">
+                    <a> <%= link_to 'Editar Bien', edit_good_path(@good) , class: 'btn transparent-btn float-btn'%>
+                        </a>
+                     <a> <%= link_to 'Eliminar Bien', good_path(@good) , class: 'btn transparent-btn float-btn', method: :delete, data: {confirm: '¿Está seguro de eliminar el bien?'} %>
+                        </a>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+         </div> 
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="col-md-12">
+    <div class="container">
+        <div class="list-single-main-item fl-wrap">
+            <div class="list-single-main-item-title fl-wrap">
+                <% @goods.each do |good| %>
+                 <h3>Nombre Bien: <%= good.name %>  </h3>
+                    <p> Descripción: <%= good.description %> </p>
+                            <div class="list-single-main-item-title fl-wrap">
+                                 <h3>Caracteristicas</h3>        
+                <div class="listing-features fl-wrap">
+                    <ul>
+                    <li> Tipo de bien: <%= good.type_good%> </li>
+                    <li> Precio inicial: <%= good.initial_value%> </li>
+                    <li> Precio Actual: <%= good.current_value  %></li>
+                    </ul>  
+                    <a> <%= link_to 'Información detallada', good_path(good) , class: 'btn transparent-btn float-btn'%>
+                        </a>
+                    </div>
+                </div>
+                 <span class="fw-separator"></span>        
+               <% end %> 
+            </div>
+         </div> 
+    </div>
+</div>   
+

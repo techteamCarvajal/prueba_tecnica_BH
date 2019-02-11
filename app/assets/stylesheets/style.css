@@ -48,7 +48,7 @@ body{
 	font-size: 13px;
 	height:100%;
 	text-align:center;
-	background:#A4D6FF;
+	background:#2ecc71;
 	color:#000;
 	font-family: 'Raleway', sans-serif;
 }
@@ -141,11 +141,11 @@ svg.paralax  path, svg.paralax polyline {
 }
 
 .visual-container{
-  background: #A4D6FF; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #A4D6FF 0%, #6396FF 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #A4D6FF 0%,#6396FF 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #A4D6FF 0%,#6396FF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A4D6FF', endColorstr='#6396FF',GradientType=1 );
+  background: #2ecc71; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #2ecc71 0%, #1abc9c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #2ecc71 0%,#1abc9c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #2ecc71 0%,#1abc9c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ecc71', endColorstr='#1abc9c',GradientType=1 );
 width: 100%;
     height: 100%;
 }
@@ -356,11 +356,11 @@ width: 100%;
 	box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.2);
 }
 .dark-header {
-	background: #A4D6FF; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #A4D6FF 0%, #6396FF 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #A4D6FF 0%,#6396FF 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #A4D6FF 0%,#6396FF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A4D6FF', endColorstr='#6396FF',GradientType=1 );
+	background: #2ecc71; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #2ecc71 0%, #1abc9c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #2ecc71 0%,#1abc9c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #2ecc71 0%,#1abc9c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ecc71', endColorstr='#1abc9c',GradientType=1 );
 }
 .fs-header {
 	padding:0px 50px;
@@ -1155,7 +1155,7 @@ section.gray-section .section-separator {
 	right:50px;
 }
 .sw-btn:hover {
-	background: #6396FF;
+	background: #1abc9c;
 }
 .single-carousel .slick-dots , .listing-carousel .slick-dots {
 	bottom:-50px;
@@ -1165,7 +1165,7 @@ section.gray-section .section-separator {
 }
 .list-single-carousel-wrap {
 	height:500px;
-	background: #A4D6FF;
+	background: #2ecc71;
 }
 .fw-carousel .slick-slide-item {
 	width:auto;
@@ -1269,7 +1269,7 @@ section.gray-section .section-separator {
 	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.2);
 }
 .box-cat:hover{
-	background: #6396FF;
+	background: #1abc9c;
 }
 .box-cat  i {
 	padding-bottom:10px;
@@ -1396,7 +1396,7 @@ section.gray-section .section-separator {
 	background:#55acee;
 }
 .close-reg:hover  , .custom-form .log-submit-btn:hover , .soc-log a:hover{
-	background: #A4D6FF;
+	background: #2ecc71;
 }
 .log-separator  span{
 	position:relative;
@@ -1612,7 +1612,7 @@ section.gray-section .section-separator {
 	transition: all .2s ease-in-out;
 	opacity:0;
 	visibility:hidden;
-	color: #6396FF;
+	color: #1abc9c;
 }
 .card-listing .geodir-category-location  a.map-item:hover:before  {
 	visibility:visible;
@@ -2291,7 +2291,7 @@ section.gray-section .section-separator {
 }
 .map-card-rainting i {
 	float:left;
-	color:#6396FF;
+	color:#1abc9c;
 	margin-right:6px;
 }
 .map-popup-reviews-count {
@@ -2374,7 +2374,7 @@ section.list-single-section .bg {
 }
 .list-single-header-item h2 a {
 	font-weight:600;
-	color:#6396FF;
+	color:#1abc9c;
 }
 .list-single-header-item p {
 	color: rgba(255,255,255,0.71);
@@ -2712,7 +2712,7 @@ article .list-single-main-item {
 	background:#fff;
 }
 .promo-link:hover i{
-	background: #6396FF;
+	background: #1abc9c;
 	color:#fff;
 }
 .list-single-gallery {
@@ -2817,7 +2817,7 @@ article .list-single-main-item {
     box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.2);
 }
 .banner-wdget-content a:hover{
-    background: #A4D6FF;
+    background: #2ecc71;
 }
 .pricerange  span{
 	float:left;
@@ -2829,7 +2829,7 @@ article .list-single-main-item {
 	font-size:14px;
 	text-align:left;
 	font-weight:500;
-	color: #6396FF;
+	color: #1abc9c;
 }
 .claim-widget-link {
 	padding-top:20px;
@@ -2842,7 +2842,7 @@ article .list-single-main-item {
 	font-weight:500;
 }
 .claim-widget-link a:hover{
-    color: #A4D6FF;
+    color: #2ecc71;
 }
 .claim-widget-link span {
 	color: #878C9F;
@@ -2967,7 +2967,7 @@ article .list-single-main-item {
 	color:#fff;
 }
 .list-widget-social li a:hover {
-	background: #6396FF;
+	background: #1abc9c;
 }
 .opening-hours ul li {
     width: 100%;
@@ -2980,7 +2980,7 @@ article .list-single-main-item {
 .opening-hours ul li span.opening-hours-time {
     float: right;
 	font-weight:500;
-	color:#6396FF;
+	color:#1abc9c;
 }
 .opening-hours ul li span.opening-hours-day {
 	float:left;
@@ -2997,7 +2997,7 @@ article .list-single-main-item {
 	margin-bottom:20px;
 	text-align:left;
 	font-weight:700;
-	color:#6396FF;
+	color:#1abc9c;
 	font-size:15px;
 }
 .current-status i {
@@ -3119,7 +3119,7 @@ article .list-single-main-item {
     font-size: 14px;
     float: right;
     letter-spacing: 4px;
-    color: #6396FF;
+    color: #1abc9c;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -3164,7 +3164,7 @@ article .list-single-main-item {
 	width:100%;
 	margin-top:17px;
 	font-weight: 500;
-    color: #6396FF;
+    color: #1abc9c;
 	font-size:12px;
 }
 .box-widget.widget-posts   .widget-posts-date i {
@@ -3679,7 +3679,7 @@ article .list-single-main-item {
 	box-shadow:0px 0px 0px 4px rgba(255,255,255,0.4);
 }
 .mapnavigation a , .mapzoom-in:hover  , .mapzoom-out:hover{
-	background: #A4D6FF;
+	background: #2ecc71;
 }
 /*-------------accordion---------------------------------------*/
 .accordion {
@@ -4165,7 +4165,7 @@ article .list-single-main-item {
 .dashboard-message-text .btn {
 	margin-top:10px;
 	float:left;
-	background: #6396FF !important;
+	background: #1abc9c !important;
 	padding:12px 20px;
 	font-weight:500;
 	font-size:12px;
@@ -4209,7 +4209,7 @@ article .list-single-main-item {
 	padding:6px 15px;
 	border-radius:4px;
 	color:#fff;
-	background:#6396FF;
+	background:#1abc9c;
 	z-index:10;
 }
 .dashboard-listing-table-image {
@@ -4252,14 +4252,14 @@ article .list-single-main-item {
 	color:#fff;
 	padding:9px 22px;
 	border-radius:30px;
-	background: #6396FF;
+	background: #1abc9c;
 	float:left;
 }
 .dashboard-listing-table-opt li  a.del-btn:hover {
 	background:#f91942;
 }
 .profile-edit-header h4 span{
-	color: #6396FF;
+	color: #1abc9c;
 }
 .statistic-container {
 	margin-bottom:20px;
@@ -4308,7 +4308,7 @@ article .list-single-main-item {
 	padding:0 5px;
 }
 .notification.success {
-	background: #6396FF;
+	background: #1abc9c;
 }
 .notification.waitforreview{
 	background:#FBC54F;
@@ -4350,7 +4350,7 @@ article .list-single-main-item {
 	font-weight:600;
 }
 .btn.color-bg:hover{
-	background:#A4D6FF;
+	background:#2ecc71;
 }
 .btn i {
 	padding-left:10px;
@@ -4555,7 +4555,7 @@ article .list-single-main-item {
 	border-top-right-radius:10px;
 }
 .best-price .price-head{
-    background: #6396FF;
+    background: #1abc9c;
 }
 .price-head h3 {
 	color:#fff;
@@ -4633,10 +4633,10 @@ article .list-single-main-item {
 	width:40px;
 	height:40px;
 	line-height:40px;
-	color:#6396FF;
+	color:#1abc9c;
 	font-size:16px;
 	border-radius:100%;
-	border:1px solid  #6396FF;
+	border:1px solid  #1abc9c;
 	margin-bottom:10px;
 }
 .pricing-wrap {
@@ -4808,7 +4808,7 @@ footer.main-footer.fixed-footer {
 	z-index:1;
 }
 .dark-footer {
-	background:#6396FF;
+	background:#1abc9c;
 }
 .footer-widget h3 {
 	font-size:17px;
@@ -4823,7 +4823,7 @@ footer.main-footer.fixed-footer {
 }
 .sub-footer {
 	margin-top:40px;
-	background:#A4D6FF;
+	background:#2ecc71;
 	padding:28px 0;
 }
 .copyright {
@@ -4997,7 +4997,7 @@ footer.main-footer.fixed-footer {
 	padding-right:6px;
 }
 .subscribe-message.valid i{
-	color:#6396FF;
+	color:#1abc9c;
 }
 .subscribe-message.error i{
 	color:#F00;
@@ -5235,7 +5235,7 @@ footer.main-footer.fixed-footer {
     background: #fff;
     border-radius: 100%;
     z-index: 3;
-    background: #6396FF;
+    background: #1abc9c;
     border-radius: 100%;
     font-size: 20px;
     color: #fff;
@@ -5350,7 +5350,7 @@ footer.main-footer.fixed-footer {
 	background:#fff;
 	border-radius:100%;
 	z-index:3;
-	background:#6396FF;
+	background:#1abc9c;
 	margin-left:-30px;
 	border-radius:100%;
 	font-size:20px;
@@ -5399,7 +5399,7 @@ footer.main-footer.fixed-footer {
 	box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.4);
 }
 .join-wrap-btn:hover  , .trs-btn:hover , .search-widget .search-submit:hover , .cs-wrapper .subcribe-form #subscribe #subscribe-button:hover , .cs-social li a:hover{
-	background: #6396FF;
+	background: #1abc9c;
 	color:#fff;
 }
 .join-wrap-btn i {
@@ -5626,7 +5626,7 @@ footer.main-footer.fixed-footer {
 	color:#fff;
 	line-height:40px;
 	font-size:17px;
-	background: #6396FF;
+	background: #1abc9c;
 	z-index:116;
 	cursor:pointer;
 	display:none;
@@ -5635,7 +5635,7 @@ footer.main-footer.fixed-footer {
 	-webkit-transform: translate3d(0,0,0);
 }
 .to-top:hover , .color-bg-link:hover {
-	background: #6396FF;
+	background: #1abc9c;
 	color:#fff;
 }
 /*------ Video ------------------------------------------------*/
@@ -5805,7 +5805,7 @@ footer.main-footer.fixed-footer {
 	top:-50px;
 	right:0;
 	min-width:170px;
-	background: #6396FF;
+	background: #1abc9c;
 	box-shadow: 0px 0px 0px 3px rgba(255,255,255,0.2);
 	padding:8px 8px 8px 18px;
 	margin-top:-30px;
@@ -5825,7 +5825,7 @@ footer.main-footer.fixed-footer {
 	position: absolute;
 	pointer-events: none;
 	border-color: transparent;
-	border-top-color: #6396FF;
+	border-top-color: #1abc9c;
 	border-width: 7px;
 	margin-left: 7px;
 	z-index:2;
@@ -5948,7 +5948,7 @@ footer.main-footer.fixed-footer {
 	cursor:pointer;
 }
 .error-wrap form  .search-submit:hover{
-	background: #6396FF;
+	background: #1abc9c;
 }
 .error-wrap a.btn {
 	display:inline-table;
@@ -6385,7 +6385,7 @@ section.list-single-section {
 	z-index:30;
 }
 .header-user-name {
-	background: #A4D6FF;
+	background: #2ecc71;
 	padding:15px 20px;
 	border-radius:6px;
 }

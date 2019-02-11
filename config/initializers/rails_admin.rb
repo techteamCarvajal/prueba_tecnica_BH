@@ -38,14 +38,7 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
-    # Agregando CKEditor al campo de contenido del blog
-  config.model Blog do
-    edit do
-      field :title
-      field :image
-      field :content, :ck_editor
-      field :tags
-    end
-  end
+    
+  
   
 end

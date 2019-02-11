@@ -1,12 +1,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 <header class="main-header dark-header fs-header sticky">
     <div class="header-inner">
-       <div class="logo-holder">
+         <div class="logo-holder">
             <%= link_to root_path do %>
-                <%= image_tag("logo.png") %>
+                <%= image_tag("logoBH.png") %>
             <% end %>
         </div> 
-       <!-- <a class="add-list" onclick="clickButton()">Botón de emergencia<span><i class="fa fa-ambulance"></i></span></a> -->
         <div class="nav-holder main-menu">
             <nav>
                 <ul>
@@ -15,60 +14,14 @@
                             <a><%= current_user.nombres %> <%= current_user.apellidos %><i class="fa fa-caret-down"></i></a>
                             <ul>
                                 
-                                <li><%= link_to "Inicio", root_path  %></li>
-                                <li><%= link_to "Método Eulearn", "/metodo" %></li>
-                                <li><%= link_to "Actualización de perfil", edit_user_registration_path %></li>
+                                <li><%= link_to "Crear bien", root_path  %></li>
+                               <li><%= link_to "Bienes", root_path  %></li>
                                 <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
                             </ul>
                         </li>
                     <% else %>
-
-                        <li><%= link_to "Inicio", root_path  %></li>
-                        
-                         <li>
-                         <a>Nuestros servicios</a>
-                        <ul>
-                            <li>
-                                <%= link_to "Intensivo", "/programa_intensivo" %>
-                            </li>
-                            <li>
-                                <%= link_to "Multidisciplinar", "/programa_multidisciplinar" %>
-                            </li>
-                            <li>
-                                <%= link_to "Fastclass", "/programa_fastclass" %>
-                            </li>
-                            <li>
-                                <%= link_to "Acompañamiento", "/acompanamiento_tareas" %>
-                            </li>
-                        </ul>
-                    </li>
-
-                            <li><%= link_to "Método Eulearn", "/metodo" %></li>
-                       
-                        <li><%= link_to "Acerca Eulearn", "/acerca" %></li>
-                           <li>
-                        <%= link_to blogs_path do %>
-                            Blog
-                        <% end %>
-                        </li>
-
-                         <li>
-                        <%= link_to new_contact_path do %>
-                            Contacto
-                        <% end %>
-                    </li>
-
-                        <li><%= link_to "Preguntas frecuentes", "/faq" %></li>
-                        <li>
-                            <%= link_to new_user_registration_path do %>
-                              Inscribete
-                            <% end %>
-                        </li>
-                          <li>            
-                            <%= link_to new_user_session_path do %>
-                                Iniciar sesión
-                            <% end %>
-                        </li>
+                        <li><%= link_to "Crear bien", new_good_path  %></li>
+                        <li><%= link_to "Bienes", root_path  %></li>
                     <% end %>
                 </ul>
             </nav>
@@ -81,15 +34,3 @@
         </div>
     </div>
 </header>
-<script type="text/javascript">
-    function clickButton(){
-        swal({
-            position: 'top-end',
-            type: 'success',
-            title: 'Atención',
-            text: 'Las autoridades ya han sido notificadas y están en camino',
-            showConfirmButton: true,
-            showCancelButton: true
-        })
-    }
-</script>

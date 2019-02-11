@@ -1,0 +1,74 @@
+<section class="sec1">
+  <div class="container">
+    <div class="section-title">
+        <h2>Creación de Bienes</h2>
+        <span class="section-separator"></span>          
+    </div>
+  </div>
+
+  <div class="container sign-in-container">
+    <div class="tabs-container">
+      <div class="tab">
+        <div id="tab-1" class="tab-content">
+          <div class="custom-form" style="text-align: center;">
+            <%= form_for @good, :html => {:class => 'form-horizontal' } do |f| %>
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <%= f.label :name, "Nombre del bien" %>
+                  <%= f.text_field :name, autofocus: true, placeholder: "Nombre de inmueble", 
+                  title: 'Inserta el nombre del inmueble', 'data-toggle' => 'tooltip',class: "form-control", required: true%>
+                </div>
+              </div>
+              <div class="row">
+                 <div class="col-md-12">
+                  <%= f.label :description, "Descripción del bien" %>
+                  <%= f.text_area :description, autofocus: true, placeholder: "Descripción de inmueble", 
+                  title: 'Inserta la descripción del inmueble', 'data-toggle' => 'tooltip',class: "form-control", required: true%>
+                </div>
+              </div>
+              <br>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Tipo de inmueble</label>
+                  <%= f.select :type_good, options_for_select([["Auto", "Auto"], ["Inmueble", "Inmueble"], ["Finca", "Finca"]]), {:prompt => "Selecciona el tipo"}, {:class => "chosen-select", required: true} %> 
+                </div>
+                <div class="col-md-4">
+                  <%= f.label :initial_value, "Valor de compra inicial" %>
+                  <%= f.text_field :initial_value, placeholder: "Valor inicial de compra", title: 'Valor inicial de compra', 'data-toggle' => 'tooltip',class: "form-control", required: true %>
+                </div>
+                <div class="col-md-4">
+                  <%= f.label :current_value, "Valor actual " %>
+                  <%= f.text_field :current_value, placeholder: "Valor actual del mercado", title: 'Valor actual', 'data-toggle' => 'tooltip',class: "form-control", required: true %>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <%= f.label :purchase_date, "Fecha de compra " %>
+                  <%= f.date_field :purchase_date, value: f.object.try(:strftime,"%m/%d/%Y"), class: 'form-control' , required: true%>
+                </div>
+                <div class="col-md-6">
+                  <%= f.label :last_modification_date, "Fecha de última modificación " %>
+                  <%= f.date_field :last_modification_date,value: f.object.try(:strftime,"%m/%d/%Y"), class: 'form-control' , required: true%>
+                </div>
+
+              </div>
+        
+
+    
+              <div class="col-md-6 col-md-offset-3">
+                <button class="btn  big-btn  color-bg flat-btn" type="submit" style="width: 100%">
+                  Crear inmueble
+                  <i class="fa fa-angle-right"></i>
+                </button>
+              </div>
+
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
