@@ -44975,3 +44975,419 @@ Processing by GoodsController#index as HTML
 Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.5ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/models/application_record.rb:1)
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:24:26 -0500
+  [1m[35m (27.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (13.7ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (43.2ms)
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_message.html.erb (0.9ms)
+Completed 200 OK in 11657ms (Views: 11600.4ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:27:06 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (25.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (29.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_message.html.erb (1.4ms)
+Completed 200 OK in 963ms (Views: 935.2ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/goods/11" for 127.0.0.1 at 2019-02-11 11:27:11 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mGood Load (14.8ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (17.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 523ms (Views: 57.5ms | ActiveRecord: 14.8ms)
+
+
+Started DELETE "/goods/11" for 127.0.0.1 at 2019-02-11 11:27:20 -0500
+Processing by GoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gD45ZunmTih/Kt3u1lWoxSYhLQW5ZIU4tJB2phlIkUs/gf4OuYV0DNdgWwSpKmlFY0nX2eZ7peVn4jTRxn2FUQ==", "id"=>"11"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Destroy (40.7ms)[0m  [1m[31mDELETE FROM "goods" WHERE "goods"."id" = ?[0m  [["id", 11]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms (ActiveRecord: 43.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:27:21 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/goods/12" for 127.0.0.1 at 2019-02-11 11:27:23 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/goods/12" for 127.0.0.1 at 2019-02-11 11:27:27 -0500
+Processing by GoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"c3rvJTh+YZzCnSHTSbCcaMuAVOkrHjR8zGQo0QzNhNvMxShNaB1buGrXpzk2z13ojuiuNXQBFKEfFmqm0/iQwQ==", "id"=>"12"}
+  [1m[36mGood Load (0.1ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Destroy (1.5ms)[0m  [1m[31mDELETE FROM "goods" WHERE "goods"."id" = ?[0m  [["id", 12]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:27:27 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/goods/13" for 127.0.0.1 at 2019-02-11 11:27:29 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_message.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/goods/13" for 127.0.0.1 at 2019-02-11 11:27:35 -0500
+Processing by GoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"630+0BJ8Bx0KTW5pQAAZdl6N4LhDEw/6Te25mwiukV5Uwvm4Qh89OaIH6IM/f9j2G+UaZBwMLyeen/vs15uFRA==", "id"=>"13"}
+  [1m[36mGood Load (0.6ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Destroy (0.5ms)[0m  [1m[31mDELETE FROM "goods" WHERE "goods"."id" = ?[0m  [["id", 13]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:27:35 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/goods/new" for 127.0.0.1 at 2019-02-11 11:27:49 -0500
+Processing by GoodsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  Rendering goods/new.html.erb within layouts/application
+  Rendered goods/new.html.erb within layouts/application (48.3ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_message.html.erb (0.9ms)
+Completed 200 OK in 130ms (Views: 113.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goods/new" for 127.0.0.1 at 2019-02-11 11:29:30 -0500
+Processing by GoodsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  Rendering goods/new.html.erb within layouts/application
+  Rendered goods/new.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 198ms (Views: 195.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/goods" for 127.0.0.1 at 2019-02-11 11:30:36 -0500
+Processing by GoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gexC/8B/A+HftOtpBUApgO7wEq5meRvH6M+MytXnR5I+U4WXkBw5xXf+bYN6P+gAq5jocjlmOxo7vc69CtJTiA==", "good"=>{"name"=>"Finca el poblado", "description"=>"Dotada con la mejor tecnología y animales, está ubicada en el sector de Fusagasuga", "type_good"=>"Finca", "initial_value"=>"48000", "current_value"=>"120000", "purchase_date"=>"2017-02-07", "last_modification_date"=>"2018-06-14"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "goods" WHERE "goods"."name" = ? LIMIT ?[0m  [["name", "Finca el poblado"], ["LIMIT", 1]]
+  [1m[36mGood Create (47.9ms)[0m  [1m[32mINSERT INTO "goods" ("name", "description", "initial_value", "current_value", "purchase_date", "last_modification_date", "created_at", "updated_at", "type_good") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Finca el poblado"], ["description", "Dotada con la mejor tecnología y animales, está ubicada en el sector de Fusagasuga"], ["initial_value", 48000.0], ["current_value", 120000.0], ["purchase_date", "2017-02-07"], ["last_modification_date", "2018-06-14"], ["created_at", "2019-02-11 16:30:36.181632"], ["updated_at", "2019-02-11 16:30:36.181632"], ["type_good", "Finca"]]
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/goods
+Completed 302 Found in 90ms (ActiveRecord: 60.9ms)
+
+
+Started GET "/goods" for 127.0.0.1 at 2019-02-11 11:30:36 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 95ms (Views: 57.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/goods/1" for 127.0.0.1 at 2019-02-11 11:30:42 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 137ms (Views: 134.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goods/1/edit" for 127.0.0.1 at 2019-02-11 11:30:51 -0500
+Processing by GoodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/edit.html.erb within layouts/application
+  Rendered goods/edit.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 99ms (Views: 40.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/goods/1" for 127.0.0.1 at 2019-02-11 11:31:11 -0500
+Processing by GoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"31ERTeFZ7GDYnIlQkWeB715S+F5IdcFz34oWqXeTtutg7tYlsTrWRHDWD7ruGEBvGzoCghdq4a4M+FTeqKai8Q==", "good"=>{"current_value"=>"140000.0"}, "id"=>"1"}
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "goods" WHERE "goods"."name" = ? AND "goods"."id" != ? LIMIT ?[0m  [["name", "Finca el poblado"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mGood Update (15.5ms)[0m  [1m[33mUPDATE "goods" SET "current_value" = ?, "updated_at" = ? WHERE "goods"."id" = ?[0m  [["current_value", 140000.0], ["updated_at", "2019-02-11 16:31:11.675925"], ["id", 1]]
+  [1m[35m (33.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "goods" WHERE "goods"."name" = ? AND "goods"."id" != ? LIMIT ?[0m  [["name", "Finca el poblado"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mGood Update (0.4ms)[0m  [1m[33mUPDATE "goods" SET "last_modification_date" = ?, "updated_at" = ? WHERE "goods"."id" = ?[0m  [["last_modification_date", "2019-02-11"], ["updated_at", "2019-02-11 16:31:11.750968"], ["id", 1]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/goods/1
+Completed 302 Found in 90ms (ActiveRecord: 52.6ms)
+
+
+Started GET "/goods/1" for 127.0.0.1 at 2019-02-11 11:31:11 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.7ms)
+Completed 200 OK in 265ms (Views: 216.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goods/1/edit" for 127.0.0.1 at 2019-02-11 11:31:20 -0500
+Processing by GoodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/edit.html.erb within layouts/application
+  Rendered goods/edit.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goods/1/edit" for 127.0.0.1 at 2019-02-11 11:32:14 -0500
+Processing by GoodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.1ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/edit.html.erb within layouts/application
+  Rendered goods/edit.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:35: syntax error, unexpected ':', expecting =>
+... => "chosen-select", :disabled: true} );@output_buffer.safe_...
+...                              ^
+/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:68: syntax error, unexpected end, expecting ')'
+'.freeze;             end 
+                      ^~~
+/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:76: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:78: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/goods/edit.html.erb:35: syntax error, unexpected ':', expecting =>
+app/views/goods/edit.html.erb:68: syntax error, unexpected end, expecting ')'
+app/views/goods/edit.html.erb:76: syntax error, unexpected ensure, expecting ')'
+app/views/goods/edit.html.erb:78: syntax error, unexpected end, expecting ')'
+Started GET "/goods/1/edit" for 127.0.0.1 at 2019-02-11 11:32:25 -0500
+Processing by GoodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/edit.html.erb within layouts/application
+  Rendered goods/edit.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:35: syntax error, unexpected true, expecting =>
+..."chosen-select", :disabled true} );@output_buffer.safe_appen...
+...                           ^~~~
+/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:68: syntax error, unexpected end, expecting ')'
+'.freeze;             end 
+                      ^~~
+/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:76: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/andresburgos/Documents/GitHub/prueba_tecnica_BH/app/views/goods/edit.html.erb:78: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/goods/edit.html.erb:35: syntax error, unexpected true, expecting =>
+app/views/goods/edit.html.erb:68: syntax error, unexpected end, expecting ')'
+app/views/goods/edit.html.erb:76: syntax error, unexpected ensure, expecting ')'
+app/views/goods/edit.html.erb:78: syntax error, unexpected end, expecting ')'
+Started GET "/goods/1/edit" for 127.0.0.1 at 2019-02-11 11:32:45 -0500
+Processing by GoodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/edit.html.erb within layouts/application
+  Rendered goods/edit.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_message.html.erb (0.8ms)
+Completed 200 OK in 307ms (Views: 304.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/goods/1" for 127.0.0.1 at 2019-02-11 11:32:53 -0500
+Processing by GoodsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"18f07I+WrJL3kCwDgPvxdao86epO0kFhCgZx/ONRmBpoeDOE3/WWtl/aqun/hDD171QTNhHNYbzZdDOLPGSMAA==", "id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Destroy (0.6ms)[0m  [1m[31mDELETE FROM "goods" WHERE "goods"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:32:53 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/goods/new" for 127.0.0.1 at 2019-02-11 11:32:57 -0500
+Processing by GoodsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  Rendering goods/new.html.erb within layouts/application
+  Rendered goods/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_message.html.erb (0.8ms)
+Completed 200 OK in 81ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/goods" for 127.0.0.1 at 2019-02-11 11:33:25 -0500
+Processing by GoodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QYPK8XABi5xkK+1OsoaAxzi07Evhmdzt1WK7I1k02Db+PA2ZIGKxuMxha6TN+UFHfdwWl76G/DAGEPlUhgHMLA==", "good"=>{"name"=>"Finca el poblado", "description"=>"finca para 200 personas", "type_good"=>"Finca", "initial_value"=>"48000", "current_value"=>"120000", "purchase_date"=>"2019-02-01", "last_modification_date"=>"2019-02-04"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "goods" WHERE "goods"."name" = ? LIMIT ?[0m  [["name", "Finca el poblado"], ["LIMIT", 1]]
+  [1m[36mGood Create (0.4ms)[0m  [1m[32mINSERT INTO "goods" ("name", "description", "initial_value", "current_value", "purchase_date", "last_modification_date", "created_at", "updated_at", "type_good") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Finca el poblado"], ["description", "finca para 200 personas"], ["initial_value", 48000.0], ["current_value", 120000.0], ["purchase_date", "2019-02-01"], ["last_modification_date", "2019-02-04"], ["created_at", "2019-02-11 16:33:25.370122"], ["updated_at", "2019-02-11 16:33:25.370122"], ["type_good", "Finca"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/goods
+Completed 302 Found in 8ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/goods" for 127.0.0.1 at 2019-02-11 11:33:25 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/goods/1" for 127.0.0.1 at 2019-02-11 11:33:29 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_message.html.erb (0.7ms)
+Completed 200 OK in 94ms (Views: 40.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/goods/1/edit" for 127.0.0.1 at 2019-02-11 11:33:33 -0500
+Processing by GoodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/edit.html.erb within layouts/application
+  Rendered goods/edit.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/goods/1" for 127.0.0.1 at 2019-02-11 11:34:00 -0500
+Processing by GoodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y3JDsOCSPbirvKasaA5GC5CJms3eCdLqP7rFsTgzTXN0zYTYsPEHnAP2IEYXcYeL1eFgEYEW8jfsyIfG5wZZaQ==", "good"=>{"current_value"=>"130000.0"}, "id"=>"1"}
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "goods" WHERE "goods"."name" = ? AND "goods"."id" != ? LIMIT ?[0m  [["name", "Finca el poblado"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mGood Update (0.5ms)[0m  [1m[33mUPDATE "goods" SET "current_value" = ?, "updated_at" = ? WHERE "goods"."id" = ?[0m  [["current_value", 130000.0], ["updated_at", "2019-02-11 16:34:00.314437"], ["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mGood Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "goods" WHERE "goods"."name" = ? AND "goods"."id" != ? LIMIT ?[0m  [["name", "Finca el poblado"], ["id", 1], ["LIMIT", 1]]
+  [1m[36mGood Update (0.3ms)[0m  [1m[33mUPDATE "goods" SET "last_modification_date" = ?, "updated_at" = ? WHERE "goods"."id" = ?[0m  [["last_modification_date", "2019-02-11"], ["updated_at", "2019-02-11 16:34:00.319561"], ["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/goods/1
+Completed 302 Found in 14ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/goods/1" for 127.0.0.1 at 2019-02-11 11:34:00 -0500
+Processing by GoodsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGood Load (0.1ms)[0m  [1m[34mSELECT  "goods".* FROM "goods" WHERE "goods"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering goods/show.html.erb within layouts/application
+  Rendered goods/show.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:34:06 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "goods"[0m
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.5ms)
+
+
