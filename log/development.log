@@ -44905,3 +44905,73 @@ Processing by GoodsController#index as HTML
 Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:03:09 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (90.1ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (429.3ms)
+  Rendered shared/_navbar.html.erb (18.5ms)
+  Rendered shared/_message.html.erb (0.9ms)
+Completed 200 OK in 9980ms (Views: 9132.9ms | ActiveRecord: 90.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:03:49 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_message.html.erb (0.7ms)
+Completed 200 OK in 274ms (Views: 272.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:04:03 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 248ms (Views: 244.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:05:24 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (15.6ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (35.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_message.html.erb (0.7ms)
+Completed 200 OK in 1022ms (Views: 833.1ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:05:43 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (0.2ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 324ms (Views: 321.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:05:50 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (0.3ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-11 11:06:12 -0500
+Processing by GoodsController#index as HTML
+  Rendering goods/index.html.erb within layouts/application
+  [1m[36mGood Load (0.5ms)[0m  [1m[34mSELECT "goods".* FROM "goods"[0m
+  Rendered goods/index.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+  Rendered shared/_message.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.5ms)
+
+
